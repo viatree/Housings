@@ -1,0 +1,101 @@
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.text-box {
+    background: linear-gradient(to bottom, #800000, #B22222);
+    color: white;
+    border-radius: 16px 0px 0px 16px; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px; 
+    position: absolute; /* Menambahkan positioning absolute */
+    top: 0;
+    left: 0;
+    z-index: 10; /* Pastikan text box di atas gambar */
+    width: 35%; 
+}
+
+.btn-light {
+    background-color: white;
+    color: #b31b1b;
+    border: none;
+    margin-right: 100px;
+    font-size: small;
+    width: 50%;
+    margin-bottom: -30px;
+}
+
+.btn-link {
+    color: white;
+    border: none;
+    background: none;
+    text-decoration: none;
+    margin-left: 150px;
+    font-size: small;
+    width: 50%;
+}
+
+/* Ensures no margin or gaps in carousel */
+.carousel-inner .row {
+    margin: 0; 
+    height: 100%; 
+    gap: 0;
+}
+
+.carousel-item .col-md-5 {
+    padding: 0; 
+    max-width: 40%; 
+    flex: 0 0 40%; 
+    display: flex;
+}
+
+.carousel-item .col-md-7 {
+    padding: 0; 
+    max-width: 60%; 
+    flex: 0 0 60%; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #800000;
+    border-radius: 30%;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+    left: 0; /* Align to the left */
+    margin-left: -80px;
+    z-index: 12;
+}
+
+.carousel-control-next {
+    right: 0;
+    margin-right: -80px;
+}
+
+.progress-bar {
+    background-color: #b31b1b; /* Red color for progress bar */
+}
+/* Responsive adjustments */
+@media screen and (max-width: 900px) {
+    .text-box {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .text-box {
+        text-align: center;
+    }
+}

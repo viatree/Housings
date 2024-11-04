@@ -1,0 +1,127 @@
+/* Containers & General Layout */
+.containers {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: flex-start;
+    background-color: #8a0000;
+}
+
+.left-section {
+    max-width: 40%;
+    margin-top: 2rem;
+}
+
+.left-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.left-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.left-section button {
+    background-color: white;
+    color: #8a0000;
+    font-weight: 500;
+    /* padding: 10px 20px; */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px solid ;
+    border-radius: 8px;
+    padding: 5px 15px;
+}
+
+.left-section button:hover {
+    background-color: #f0f0f0;
+}
+
+.right-section {
+    max-width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    height: 350px; /* Height remains the same */
+    overflow: hidden;
+    position: relative;
+}
+
+/* Testimonial Wrapper & Columns */
+.testimonial-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    position: relative;
+}
+
+.testimonial-column.left-column {
+    animation: scrollUp 15s linear infinite; 
+}
+
+.testimonial-column.right-column {
+    animation: scrollDown 15s linear infinite; 
+}
+
+/* Card Styling */
+.testimonial-card {
+    background-color: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.testimonial-card h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.testimonial-card p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author span {
+    font-size: 0.8rem;
+}
+
+.job-title {
+    color: #888;
+    font-style: italic;
+}
+
+/* Keyframes for scrolling up animation (Left Column) */
+@keyframes scrollUp {
+    0% {
+        transform: translateY(0); /* Start below the container */
+    }
+    100% {
+        transform: translateY(-71.43%); /* Scroll out above */
+    }
+}
+
+/* Keyframes for scrolling down animation (Right Column) */
+@keyframes scrollDown {
+    0% {
+        transform: translateY(-71.43%); 
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}

@@ -1,0 +1,64 @@
+.body{
+    background-color: #9ca3af;
+}
+.form{
+    position: relative;
+     display: inline-block;
+}
+
+.form .fa-search{
+
+    position: absolute;
+    top:20px;
+    left: 20px;
+    color: #9ca3af;
+
+}
+.form span{
+
+    position: absolute;
+    right: 17px;
+    top: 13px;
+    padding: 2px;
+    border-left: 1px solid #d1d5db;
+}
+.form-input{
+    height: 50px;
+    text-indent: 33px;
+    border-radius: 10px;
+    padding: 0 10px;
+    width: 250px; /* Adjust the width to ensure it is long enough */
+    box-sizing: border-box;
+}
+
+.form-input:focus{
+    box-shadow: none;
+    border:none;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    .form{
+        position: absolute;
+        bottom: -10px;
+        left: 90px;
+    }
+
+    .form span{
+
+        position: absolute;
+        right: 17px;
+        top: 13px;
+        padding: 2px;
+        border-left: 1px solid #d1d5db;
+    }
+
+    .form-input{
+        height: 45px;
+        text-indent: 33px;
+        border-radius: 10px;
+        padding: 0 10px;
+        width: 120px;
+        box-sizing: border-box;
+    }
+  }
